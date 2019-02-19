@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Project0 Website</title>
     <style media="screen">
-      body{
+      .project{
         background-color:teal;
       }
       h1{
@@ -12,21 +12,55 @@
         color:white;
       }
     </style>
-    <link rel="stylesheet" href="G:\vinod\atom\Project0\design.css">
+  <link rel="stylesheet" href="G:\vinod\atom\Project0\design.css">
+  <link rel="stylesheet" href="G:\vinod\atom\Project0\Animate.css">
   </head>
-  <body>
-       <h1>Select the area of interest</h1>
-    <div class="m1" id="mark1">
+  <body class="project"onload="print()">
+       <h1 class = "animated bounceInUp">Select the area of interest</h1>
+       <p></p>
 
+    <div class="m1" id="mark1">
+        <h2>Area of Interest 1</h2>
     </div>
     <div class="m1"id="mark2">
-
+      <h2>Area of Interest 1</h2>
     </div>
     <div class="m1"id="mark3">
-
+      <h2>Area of Interest 1</h2>
     </div>
     <div class="m1"id="mark4">
-
+      <h2>Area of Interest 4</h2>
     </div>
+    <div class="Menu">
+      <ul>
+        <li><a href="mark1.html">Home</a></li>
+          <li><a href="mark2.html">AI</a></li>
+          <li><a href="mark3.html">Javascript APPs</a></li>
+          <li><a href="mark4.html">Glossory</a></li>
+      </ul>
+    </div>
+    <script>
+
+
+    function print()
+    {
+      var time = new Date();
+      var hour = time.getHours();
+      var mins = time.getMinutes();
+      var secs = time.getSeconds();
+      mins = checkTime(mins);
+      secs = checkTime(secs);
+      var disp = document.getElementsByTagName("p");
+    disp[0].innerHTML = hour+":"+mins+":"+secs;
+
+  }
+  function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+  setInterval(print,1000);
+
+  </script>
+
   </body>
 </html>
