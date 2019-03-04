@@ -1,0 +1,38 @@
+.calcu
+{
+  width:25%;
+  height:55%;
+  background: linear-gradient(to bottom, #4691ce ,#a20f41);
+
+  }
+h2{
+  padding-top: .5em;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.input{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:1em;
+  }
+  #texd{
+    width:100%;
+    height: 30px;
+  }
+.row{
+  margin: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap:.5em;
+  height:30px;
+}
+#firstrow{
+  grid-template-columns: 1fr 1fr;
+}
+button{
+  border:none;
+  background-color: #f1e25f;
+}
